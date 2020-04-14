@@ -1,11 +1,12 @@
 import mocha from 'mocha';
 import chai from 'chai';
-import Metadata from "../src/lib/metadata";
 
 const it = mocha.it;
 const xit = mocha.xit;
 const describe = mocha.describe;
 const expect = chai.expect;
+
+import {Metadata} from './../src/entry';
 
 describe('Metadata tests', () => {
     it('should build the default metadata', () => {

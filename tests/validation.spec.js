@@ -1,17 +1,12 @@
 import mocha from 'mocha';
 import chai from 'chai';
-import MinLength from "../src/lib/constraints/minLength";
-import MaxLength from "../src/lib/constraints/maxLength";
-import Required from "../src/lib/constraints/required";
-import Constraints, {validateCluster} from "../src/lib/constraints";
-import Email from "../src/lib/constraints/email";
-import State from "../src/lib/state";
-import Metadata from "../src/lib/metadata";
 
 const it = mocha.it;
 const xit = mocha.xit;
 const describe = mocha.describe;
 const expect = chai.expect;
+
+import Constraints, {MinLength, MaxLength, Required, Email} from './../src/entry';
 
 describe('validation tests', () => {
     it('should validate an array of constraints', () => {

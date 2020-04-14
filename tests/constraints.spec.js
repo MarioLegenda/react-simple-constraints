@@ -6,11 +6,8 @@ const xit = mocha.xit;
 const describe = mocha.describe;
 const expect = chai.expect;
 
-import Email from "../src/lib/constraints/email";
-import MinLength from "../src/lib/constraints/minLength";
-import MaxLength from "../src/lib/constraints/maxLength";
-import Equal from "../src/lib/constraints/equal";
-import Required from "../src/lib/constraints/required";
+import {Email, } from './../src/entry';
+import {Equal, MaxLength, MinLength, Required} from "../src/entry";
 
 describe('Constraints tests', () => {
     it('should test for valid and invalid email', () => {

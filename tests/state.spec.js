@@ -6,7 +6,7 @@ const xit = mocha.xit;
 const describe = mocha.describe;
 const expect = chai.expect;
 
-import State from '../src/lib/state';
+import {State} from './../src/entry'
 
 describe('State tests', () => {
     it('should create a single state prop and have all required members', () => {
