@@ -134,10 +134,3 @@ export default class Constraints {
 export function validateCluster(metadata, state, context) {
     return Constraints.validateCluster(Constraints.createCluster(metadata, state), context);
 }
-
-class EqualValue {
-    constructor(val1, val2) {
-        this.val1 = val1;
-        this.val2 = val2;
-    }
-}

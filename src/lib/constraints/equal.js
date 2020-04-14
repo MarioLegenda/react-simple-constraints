@@ -10,3 +10,10 @@ export default class Equal {
         return true;
     }
 }
+
+class EqualValue {
+    constructor(val1, val2) {
+        this.val1 = val1;
+        this.val2 = val2;
+    }
+}
