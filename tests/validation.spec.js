@@ -59,26 +59,4 @@ describe('validation tests', () => {
 
         expect(validations.length).to.be.equal(0);
     });
-
-    it('should validate a cluster of metadata', () => {
-        const state = State.buildProps('name', 'lastName', 'email', 'password', 'confirmPassword');
-
-        const metadata = {
-            name: Metadata.build('default'),
-            lastName: Metadata.build('default'),
-            email: Metadata.build({min: 1, max: 100, required: true, email: true}),
-            password: Metadata.build({
-                min: 8, max: 17, required: true, equal: {
-                    compareField: 'confirmPassword',
-                }
-            }),
-            confirmPassword: Metadata.build({
-                min: 8, max: 16, required: true, equal: {
-                    compareField: 'password',
-                }
-            }),
-        };
-
-        validateCluster(metadata, state)
-    });
 });
