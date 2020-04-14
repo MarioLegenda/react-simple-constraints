@@ -1,7 +1,7 @@
 import updateState from "./util";
 import Metadata from "./metadata";
 
-export class Constraints {
+export default class Constraints {
     static validate(constraints, val, compareValue) {
         const validations = [];
         for (const c of constraints) {
