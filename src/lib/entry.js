@@ -6,6 +6,7 @@ import Email from "./constraints/email";
 import Required from "./constraints/required";
 import MaxLength from "./constraints/maxLength";
 import MinLength from "./constraints/minLength";
+import Metadata from "./metadata";
 
 module.exports = {
     State,
@@ -18,4 +19,5 @@ module.exports = {
     Required,
     MaxLength,
     MinLength,
+    Metadata,
 };
