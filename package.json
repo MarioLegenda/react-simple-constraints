@@ -27,7 +27,7 @@
     "css-loader": "^3.4.2",
     "esm": "^3.2.25",
     "faker": "^4.1.0",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "mocha-pretty-spec-reporter": "0.1.0-beta.2",
     "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
